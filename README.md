@@ -6,9 +6,9 @@
 
 ## Equipo de Trabajo
 Los miembros del equipo de trabajo son los siguientes:
--Juan Mateos (18223)
--Carlos Muñoz (18389)
--Eduardo Palou de Comasema Jaume (18268)
+* Juan Mateos (18223)
+* Carlos Muñoz (18389)
+* Eduardo Palou de Comasema Jaume (18268)
 
 ## Tareas pendientes
 Se enumeran las tareas pendientes del proyecto:
