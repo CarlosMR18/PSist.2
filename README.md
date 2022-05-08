@@ -19,9 +19,9 @@ Se enumeran las tareas pendientes del proyecto:
 - [ ] Crear documentación
 - [ ] Guía de uso
 - [ ] Implementar la clase ObjectsList
-    [ ] Implementar métodos
-    [ ] Implementar atributos
-    [ ] Implementar elemento nodo
+    - [ ] Implementar métodos
+    - [ ] Implementar atributos
+    - [ ] Implementar elemento nodo
 - [ ] Implementar animalitos
 - [ ] \(Opcional) Obstaculos
 - [ ] \(Opcional) Doble proyectil
