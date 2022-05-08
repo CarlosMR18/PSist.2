@@ -23,11 +23,11 @@ Se enumeran las tareas pendientes del proyecto:
     [ ] Implementar atributos
     [ ] Implementar elemento nodo
 - [ ] Implementar animalitos
-- [ ]\(OPCIONAL) Obstaculos
-- [ ]\(OPCIONAL) Doble proyectil
-- [ ]\(OPCIONAL) Dos jugadores
-- [ ]\(OPCIONAL) Grafica mejorada
-- [ ]\(OPCIONAL) Efectos especiales
+- [ ] \(Opcional) Obstaculos
+- [ ] \(Opcional) Doble proyectil
+- [ ] \(Opcional) Dos jugadores
+- [ ] \(Opcional) Grafica mejorada
+- [ ] \(Opcional) Efectos especiales
 - [ ] Aprender OpenGL
 - [x] Aprender a usar Git
 
