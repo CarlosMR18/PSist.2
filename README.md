@@ -33,6 +33,8 @@ Se enumeran las tareas pendientes del proyecto:
 
 ## Funcionamiento del juego
 
+[![Watch the video](http://img.youtube.com/vi/DHPnLmntec8/0.jpg)](https://www.youtube.com/watch?v=DHPnLmntec8)
+
 ## Compilación del programa
 Para la compilación del projecto usaremos siguientes comandos según el sistema operativo:
 
