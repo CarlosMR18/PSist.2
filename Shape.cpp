@@ -1,6 +1,7 @@
 
 #include "Shape.h"
 
+
 Shape::Shape()
 {
   mynumber = RAND_DOM(0,1000000);

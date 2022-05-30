@@ -15,7 +15,7 @@
 #  include <GL/glut.h>
 #else
 #include <windows.h>
-#include "glut.h"
+#include <gl/glut.h>
 #endif
 #endif
 

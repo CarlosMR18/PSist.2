@@ -1,5 +1,4 @@
  
-
 #include "GLstuff.h"
 
 
@@ -42,7 +41,7 @@ GLuint LoadTexture( int width, int height, const char * filename )
 
   FILE * file;
 
-  file = fopen( filename, "rb" );
+  file = fopen( filename, "rb" ); //fopen_s(&file,filename,"rb"); Alternativa si da error.
 
   if ( file == NULL ) return 0;
 

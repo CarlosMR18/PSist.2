@@ -3,7 +3,6 @@
 #include "Man.h"
 #include "Bullet.h"
 
-
 Man::Man()
 {
   pos[X] = 0;

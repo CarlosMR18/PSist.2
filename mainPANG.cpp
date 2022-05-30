@@ -15,14 +15,14 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
-#include <unistd.h>
+//#include <unistd.h> En windows viene por defecto y no tiene ese nombre
 #include <string.h>
 
 #include "Shape.h"
 #include "Ball.h"
 #include "Bullet.h"
 #include "Man.h"
-#include "ObjectsList.h"
+#include "ObjectsList.h" // Es la cabecera de la clase ObjectList
 
 #include "commonstuff.h"
 #include "GLstuff.h"
@@ -83,15 +83,14 @@ int main(int argc,char* argv[])
 {
 
   // inicializaciones
-
+    char nombre_pantalla[10] = "PANG 2022";
 
   // Inicialización GLUT
   glutInit(&argc, argv);
 
   // Inicializaciones openGL (ver GLstuff.c)
-  init_GL_stuff("PANG 2022",WINX,WINY);
+  init_GL_stuff( nombre_pantalla, WINX, WINY); //Hemos modificado el argumento
   
-
   // Define call backs te GLUT
 
   // Display function: contiene las instrucciones de dibujo
@@ -231,7 +230,7 @@ void myLogic()
 	}
       
       theMan->resetpos();
-      worldobjects.reposition(theMan);
+      worldobjects.reposition(theMan); //El profesor se contradice.
     }
 
   if(res>=2)    

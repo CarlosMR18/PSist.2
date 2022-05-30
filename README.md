@@ -1,5 +1,5 @@
 # **PANG**
-### Segundo trabajo de Programaci贸n de sistemas.
+### Segundo trabajo de Programaci髇 de sistemas.
 > version: v0.1.0
 
 ![Portada de Pang Atari](./imag/Videojuego%20Pang.jpg)
@@ -7,19 +7,19 @@
 ## Equipo de Trabajo
 Los miembros del equipo de trabajo son los siguientes:
 * Juan Mateos (18223)
-* Carlos Mu帽oz (18389)
+* Carlos Mu駉z (18389)
 * Eduardo Palou de Comasema Jaume (18268)
 
 ## Tareas pendientes
 Se enumeran las tareas pendientes del proyecto:
-- [ ] Organizar repositorio git/github
+- [x] Organizar repositorio git/github
 - [ ] Diagramas de clases del juego
-- [ ] Diagramas de interacci贸n de las fases del juego m谩s interesante
-- [ ] Revisar compilaci贸n
-- [ ] Crear documentaci贸n
-- [ ] Gu铆a de uso
+- [ ] Diagramas de interacci髇 de las fases del juego m醩 interesante
+- [ ] Revisar compilaci髇
+- [ ] Crear documentaci髇
+- [ ] Gu韆 de uso
 - [ ] Implementar la clase ObjectsList
-    - [ ] Implementar m茅todos
+    - [ ] Implementar m閠odos
     - [ ] Implementar atributos
     - [ ] Implementar elemento nodo
 - [ ] Implementar animalitos
@@ -35,8 +35,8 @@ Se enumeran las tareas pendientes del proyecto:
 
 [![Watch the video](http://img.youtube.com/vi/DHPnLmntec8/0.jpg)](https://www.youtube.com/watch?v=DHPnLmntec8)
 
-## Compilaci贸n del programa
-Para la compilaci贸n del projecto usaremos siguientes comandos seg煤n el sistema operativo:
+## Compilaci髇 del programa
+Para la compilaci髇 del projecto usaremos siguientes comandos seg鷑 el sistema operativo:
 
 -Linux
 
@@ -55,5 +55,4 @@ g++ -o PANG mainPANG.cpp ...
 ```
 ## ANEXO
 Lista de referencias:
-
 

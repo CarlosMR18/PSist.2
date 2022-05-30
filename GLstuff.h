@@ -1,4 +1,4 @@
-
+//#define _CRT_SECURE_NO_DEPRECATE Codigo para solucionar error de fopen no secure.
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -16,7 +16,7 @@
 #  include <GL/glut.h>
 #else
 #include <windows.h>
-#include "glut.h"
+#include <GL/glut.h> //Se ha implementado en el sistema la libreria glut.
 #endif
 #endif
 
