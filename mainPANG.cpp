@@ -11,7 +11,7 @@
 
 
 
-
+#define _CRT_SECURE_NO_WARNINGS //Eliminamos errores de seguridad
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>

@@ -1,3 +1,8 @@
+/*******************************************************/
+/*              Cabecera de equipo                     */
+/*******************************************************/
+
+
 //Archivos de cabecera
 #include "ObjectsList.h"
 
@@ -33,9 +38,13 @@ void ObjectsList::reposition(Man* theMan) {
 
 Man* ObjectsList::getMan() {
 	//Pendiente de Implementar
+	Man theMan;
+
+	return &theMan;
 }
 
 float ObjectsList::collisions(Bullet* theBullet, Man* theMan) {
 	//Pendiente de Implementar
+	return 0.0;
 }
 
