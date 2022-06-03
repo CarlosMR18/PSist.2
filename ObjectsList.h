@@ -16,21 +16,29 @@
 	#include "Shape.h"
 #endif
 
+#ifndef __BALL_H__
+	#include "Ball.h"
+#endif
+
 //Declaramos constantes adcionales
 
 //Declaramos clases y estructuras
 	// Obtamos por una estructura ya que la seguridad no es una prioridad y es más facil de implementar y relacionar. 
 	// Aun que podriamos trabajar con una clase amiga.
-struct nodo {	
-	Shape* anterior;
-	Shape* nodo;
-	Shape* siguiente;
+
+typedef struct nodoObjectList* pnodo;
+typedef struct nodoObjectList nodo;
+
+struct nodoObjectList {
+	Shape* figura;
+	pnodo next;
 };
+
 
 class ObjectsList {
 private:
 	int n;
-	nodo* head;
+	pnodo head;
 	Man* theMan;
 public:
 	ObjectsList();

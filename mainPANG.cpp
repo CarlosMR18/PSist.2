@@ -115,6 +115,7 @@ int main(int argc,char* argv[])
   
   // Creacción de los objetos iniciales
   theMan = worldobjects.getMan();
+  
 
   // WORLDOBJECTS es declarada estática, se inicializa "automaticamente" - ya ha creado y contiene las pelotas  //***
 
@@ -230,7 +231,7 @@ void myLogic()
 	}
       
       theMan->resetpos();
-      worldobjects.reposition(theMan); //El profesor se contradice.
+      worldobjects.reposition(theMan); 
     }
 
   if(res>=2)    
@@ -256,7 +257,7 @@ void OnDibuja(void)
   displaytext(KLtexture);
 
   // Manda el mensaje "draw" al mundo
-  worldobjects.draw();    
+  worldobjects.draw();
 
   // imprime datos
   printdata();
