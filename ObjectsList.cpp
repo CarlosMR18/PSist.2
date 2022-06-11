@@ -6,7 +6,7 @@
 //Archivos de cabecera
 #include "ObjectsList.h"
 
-//Implementación de los metodos de la  clase.
+//ImplementaciÃ³n de los metodos de la  clase.
 
 ObjectsList::ObjectsList() {
 
@@ -18,11 +18,11 @@ ObjectsList::ObjectsList() {
 	head = NULL;
 	theMan = NULL;
 
-	//Añadimos los objetos iniciales
-		//Añadimos el avatar
+	//AÃ±adimos los objetos iniciales
+		//AÃ±adimos el avatar
 	theMan = new Man; //El hombre se coloca en el punto (0, 9 , 0)
 	add(theMan);
-		//Añadimos los proyectiles
+		//AÃ±adimos los proyectiles
 	for (int i = 0; i < NUMBALLS; i++)
 	{
 		Bola = new Ball(255); //EL parametro t es el color
@@ -80,6 +80,22 @@ void ObjectsList::draw() {
 }
 
 void ObjectsList::add(Shape* s) {
+	pnodo tmp, p;
+	p = head;
+	tmp = new nodo;
+	tmp->obj = s;
+	tmp->next = NULL;
+	if (head == NULL) {
+		head = tmp;
+	}
+	else {
+		//Si contiene elementos
+		while (p->next != NULL) p = p->next;
+		p->next = tmp;
+	}
+}
+
+/*void ObjectsList::add(Shape* s) {
 
 	//Variables auxiliares
 	pnodo tmp = NULL; //Puntero a nodo que recorre la lista
@@ -107,8 +123,34 @@ void ObjectsList::add(Shape* s) {
 		p->next = NULL;
 	}
 
+}*/
+
+void ObjectsList::remove(Shape* s) {
+	//La lista es recorrida en busca de un nodo cuyo obj = s
+	// Encontrado: eliminarlo y reenlaza la lista
+	// No encontrado: sale bucle
+	pnodo p = head;
+	pnodo nextNode = p->next;
+	if (p && nextNode) {
+		while ((nextNode->obj != s) && nextNode->next) {
+			p = nextNode;
+			nextNode = nextNode->next;
+		}
+
+		if (nextNode->obj == s) {
+			p->next = nextNode->next;
+			delete nextNode;
+			n--;
+		}
+
+		else if (p->obj == s) {
+			delete p;
+			head = NULL;
+		}
+	}
 }
 
+/*
 void ObjectsList::remove(Shape* s) {
 
 	//Variables auxiliares
@@ -143,7 +185,7 @@ void ObjectsList::remove(Shape* s) {
 
 	n--; //Restamos uno al contador de objetos de la lista
 
-}
+}*/
 
 void ObjectsList::reposition(Man* theMan) {
 
